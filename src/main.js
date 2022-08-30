@@ -1,4 +1,12 @@
-const { createApp } = require('vue');
-import App from "./App.vue";
-
-createApp(App).mount("#app");
+const app = Vue.createApp({
+    data() {
+        return {
+            product: 'Socks',
+            image: './assets/images/socks_blue.jpg',
+            inventory: 100,
+            // solution
+            onSale: true
+            // solution
+        }
+    }
+})
